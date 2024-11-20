@@ -1,0 +1,20 @@
+.media {
+  display: flex;
+  align-items: center;
+  &__link {
+    padding: 15px;
+    background: #303030;
+    transition: all 0.4s;
+    fill: #fff;
+    border: 1px solid #ffffff00;
+    &:hover {
+      transform: scale(1.1);
+      fill: var(--second-color);
+      background: #424242;
+      border-color: var(--second-color);
+    }
+  }
+  &:hover > :not(:hover) {
+    opacity: 0.5;
+  }
+}

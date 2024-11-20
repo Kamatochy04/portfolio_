@@ -1,0 +1,90 @@
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hobbies {
+  padding: 30px;
+  border-radius: 20px;
+  background: #00000081;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border: 1px solid #ffffff67;
+  &__card {
+    width: 100%;
+    aspect-ratio: 5/3;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(77, 77, 77);
+    overflow: hidden;
+    transition: 0.3s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::before {
+      padding: 20px;
+      font-size: 32px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.3s;
+      position: absolute;
+      background: rgb(53, 53, 53);
+      background: linear-gradient(
+        0deg,
+        rgba(7, 27, 83, 0.836) 35%,
+        rgba(0, 255, 42, 0) 100%
+      );
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  &__content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .basket {
+    background-image: url("../../assets/img//basket_bg.jpg");
+    &::before {
+      content: "Баскетбол";
+    }
+  }
+  .gym {
+    background-image: url("../../assets/img//gym_bg.jpg");
+    &::before {
+      content: "Тренажерный зал";
+    }
+  }
+  .swimming {
+    background-image: url("../../assets/img/swimming_bg.jpg");
+    &::before {
+      content: "Плавание";
+    }
+  }
+  .language {
+    background-image: url("../../assets/img/language_bg.jpg");
+    &::before {
+      content: "Иностранные языки";
+    }
+  }
+  &__descr {
+    animation: show 0.3s;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+}
+// .hobbies__box {
+//   .hobbies
+// }

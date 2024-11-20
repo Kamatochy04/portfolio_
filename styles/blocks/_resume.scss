@@ -1,0 +1,90 @@
+.resume {
+  padding: 70px 0;
+  &__box {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+.resume-card {
+  width: 100%;
+  background: #0c0c0c;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  &__box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+    }
+  }
+  &__name {
+    padding: 15px;
+    background: rgb(0, 98, 122);
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  &__socila {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+  &__box-2 {
+    background: #ffffff;
+    padding: 80px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    h3 {
+      color: #0c0c0c;
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+    .line {
+      flex-grow: 1;
+      height: 1px;
+      background: #000;
+    }
+  }
+  &__text {
+    color: #000;
+    font-size: 500;
+    line-height: 180%;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__technologis {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.technologis-item {
+  padding: 8px 12px;
+  background: #397ac4;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 10px;
+}
